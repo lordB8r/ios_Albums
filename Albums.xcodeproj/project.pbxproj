@@ -23,6 +23,7 @@
 		90017D151816BA0D007CFCF6 /* IAAlbumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90017D141816BA0D007CFCF6 /* IAAlbumsViewController.m */; };
 		90017D171816BB81007CFCF6 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90017D161816BB81007CFCF6 /* AssetsLibrary.framework */; };
 		90017D1D1816BE73007CFCF6 /* IAAssetsLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 90017D1C1816BE73007CFCF6 /* IAAssetsLibrary.m */; };
+		90017D2018171670007CFCF6 /* IAAlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90017D1F18171670007CFCF6 /* IAAlbumTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		90017D161816BB81007CFCF6 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		90017D1B1816BE73007CFCF6 /* IAAssetsLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAAssetsLibrary.h; sourceTree = "<group>"; };
 		90017D1C1816BE73007CFCF6 /* IAAssetsLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAAssetsLibrary.m; sourceTree = "<group>"; };
+		90017D1E18171670007CFCF6 /* IAAlbumTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAAlbumTableViewCell.h; sourceTree = "<group>"; };
+		90017D1F18171670007CFCF6 /* IAAlbumTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAAlbumTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90017CE31816B92E007CFCF6 /* UIKit.framework in Frameworks */,
 				90017D171816BB81007CFCF6 /* AssetsLibrary.framework in Frameworks */,
 				90017CE11816B92E007CFCF6 /* CoreGraphics.framework in Frameworks */,
-				90017CE31816B92E007CFCF6 /* UIKit.framework in Frameworks */,
 				90017CDF1816B92E007CFCF6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -128,6 +131,8 @@
 				90017D141816BA0D007CFCF6 /* IAAlbumsViewController.m */,
 				90017D1B1816BE73007CFCF6 /* IAAssetsLibrary.h */,
 				90017D1C1816BE73007CFCF6 /* IAAssetsLibrary.m */,
+				90017D1E18171670007CFCF6 /* IAAlbumTableViewCell.h */,
+				90017D1F18171670007CFCF6 /* IAAlbumTableViewCell.m */,
 			);
 			path = Albums;
 			sourceTree = "<group>";
@@ -259,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90017D2018171670007CFCF6 /* IAAlbumTableViewCell.m in Sources */,
 				90017CEF1816B92E007CFCF6 /* IAAppDelegate.m in Sources */,
 				90017D151816BA0D007CFCF6 /* IAAlbumsViewController.m in Sources */,
 				90017D1D1816BE73007CFCF6 /* IAAssetsLibrary.m in Sources */,
@@ -471,6 +477,7 @@
 				90017D0F1816B92E007CFCF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90017D101816B92E007CFCF6 /* Build configuration list for PBXNativeTarget "AlbumsTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +486,7 @@
 				90017D121816B92E007CFCF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

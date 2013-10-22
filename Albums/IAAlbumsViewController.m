@@ -7,6 +7,8 @@
 //
 
 #import "IAAlbumsViewController.h"
+#import "IAAssetsLibrary.h"
+#import "IAAlbumTableViewCell.h"
 
 @interface IAAlbumsViewController ()
 
@@ -32,37 +34,51 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.albums = [NSMutableArray array];
+    [self loadAlbums];
 }
 
+- (void)loadAlbums
+{
+    IAAssetsLibrary *library = [IAAssetsLibrary defaultInstance];
+    [library enumerateGroupsWithTypes:ALAssetsGroupAll
+                           usingBlock:^(ALAssetsGroup *group, BOOL *stop)
+     {
+         if(group)
+             [self.albums addObject:group];
+         
+         if(stop)
+             [self.tableView performSelectorOnMainThread:@selector(reloadData)
+                                              withObject:nil
+                                           waitUntilDone:YES];
+     }
+                         failureBlock:^(NSError *error)
+     {
+         NSLog(@"Problem loading albums: %@", error);
+     }];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+//{
+//#warning Potentially incomplete method implementation.
+//    // Return the number of sections.
+//    return 1;
+//}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return [self.albums count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    static NSString *CellIdentifier = @"albumCell";
+    IAAlbumTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    [cell setFromAlbum:self.albums[indexPath.row]];
     return cell;
 }
 
@@ -116,5 +132,7 @@
 }
 
  */
+
+
 
 @end

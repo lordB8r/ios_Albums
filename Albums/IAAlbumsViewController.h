@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface IAAlbumsViewController : UITableViewController
+@property(nonatomic, strong) NSMutableArray *albums;
 
 @end
