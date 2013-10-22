@@ -1,5 +1,5 @@
 //
-//  IAViewController.h
+//  IAAlbumsViewController.h
 //  Albums
 //
 //  Created by JP Bader on 10/22/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IAViewController : UIViewController
+@interface IAAlbumsViewController : UITableViewController
 
 @end

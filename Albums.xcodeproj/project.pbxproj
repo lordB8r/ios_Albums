@@ -14,13 +14,15 @@
 		90017CEB1816B92E007CFCF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90017CEA1816B92E007CFCF6 /* main.m */; };
 		90017CEF1816B92E007CFCF6 /* IAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90017CEE1816B92E007CFCF6 /* IAAppDelegate.m */; };
 		90017CF21816B92E007CFCF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90017CF01816B92E007CFCF6 /* Main.storyboard */; };
-		90017CF51816B92E007CFCF6 /* IAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90017CF41816B92E007CFCF6 /* IAViewController.m */; };
 		90017CF71816B92E007CFCF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90017CF61816B92E007CFCF6 /* Images.xcassets */; };
 		90017CFE1816B92E007CFCF6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90017CFD1816B92E007CFCF6 /* XCTest.framework */; };
 		90017CFF1816B92E007CFCF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90017CDE1816B92E007CFCF6 /* Foundation.framework */; };
 		90017D001816B92E007CFCF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90017CE21816B92E007CFCF6 /* UIKit.framework */; };
 		90017D081816B92E007CFCF6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90017D061816B92E007CFCF6 /* InfoPlist.strings */; };
 		90017D0A1816B92E007CFCF6 /* AlbumsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90017D091816B92E007CFCF6 /* AlbumsTests.m */; };
+		90017D151816BA0D007CFCF6 /* IAAlbumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90017D141816BA0D007CFCF6 /* IAAlbumsViewController.m */; };
+		90017D171816BB81007CFCF6 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90017D161816BB81007CFCF6 /* AssetsLibrary.framework */; };
+		90017D1D1816BE73007CFCF6 /* IAAssetsLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 90017D1C1816BE73007CFCF6 /* IAAssetsLibrary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +47,17 @@
 		90017CED1816B92E007CFCF6 /* IAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IAAppDelegate.h; sourceTree = "<group>"; };
 		90017CEE1816B92E007CFCF6 /* IAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IAAppDelegate.m; sourceTree = "<group>"; };
 		90017CF11816B92E007CFCF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		90017CF31816B92E007CFCF6 /* IAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IAViewController.h; sourceTree = "<group>"; };
-		90017CF41816B92E007CFCF6 /* IAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IAViewController.m; sourceTree = "<group>"; };
 		90017CF61816B92E007CFCF6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		90017CFC1816B92E007CFCF6 /* AlbumsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbumsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90017CFD1816B92E007CFCF6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		90017D051816B92E007CFCF6 /* AlbumsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AlbumsTests-Info.plist"; sourceTree = "<group>"; };
 		90017D071816B92E007CFCF6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		90017D091816B92E007CFCF6 /* AlbumsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlbumsTests.m; sourceTree = "<group>"; };
+		90017D131816BA0D007CFCF6 /* IAAlbumsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAAlbumsViewController.h; sourceTree = "<group>"; };
+		90017D141816BA0D007CFCF6 /* IAAlbumsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAAlbumsViewController.m; sourceTree = "<group>"; };
+		90017D161816BB81007CFCF6 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		90017D1B1816BE73007CFCF6 /* IAAssetsLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAAssetsLibrary.h; sourceTree = "<group>"; };
+		90017D1C1816BE73007CFCF6 /* IAAssetsLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAAssetsLibrary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90017D171816BB81007CFCF6 /* AssetsLibrary.framework in Frameworks */,
 				90017CE11816B92E007CFCF6 /* CoreGraphics.framework in Frameworks */,
 				90017CE31816B92E007CFCF6 /* UIKit.framework in Frameworks */,
 				90017CDF1816B92E007CFCF6 /* Foundation.framework in Frameworks */,
@@ -101,6 +107,7 @@
 		90017CDD1816B92E007CFCF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				90017D161816BB81007CFCF6 /* AssetsLibrary.framework */,
 				90017CDE1816B92E007CFCF6 /* Foundation.framework */,
 				90017CE01816B92E007CFCF6 /* CoreGraphics.framework */,
 				90017CE21816B92E007CFCF6 /* UIKit.framework */,
@@ -115,10 +122,12 @@
 				90017CED1816B92E007CFCF6 /* IAAppDelegate.h */,
 				90017CEE1816B92E007CFCF6 /* IAAppDelegate.m */,
 				90017CF01816B92E007CFCF6 /* Main.storyboard */,
-				90017CF31816B92E007CFCF6 /* IAViewController.h */,
-				90017CF41816B92E007CFCF6 /* IAViewController.m */,
 				90017CF61816B92E007CFCF6 /* Images.xcassets */,
 				90017CE51816B92E007CFCF6 /* Supporting Files */,
+				90017D131816BA0D007CFCF6 /* IAAlbumsViewController.h */,
+				90017D141816BA0D007CFCF6 /* IAAlbumsViewController.m */,
+				90017D1B1816BE73007CFCF6 /* IAAssetsLibrary.h */,
+				90017D1C1816BE73007CFCF6 /* IAAssetsLibrary.m */,
 			);
 			path = Albums;
 			sourceTree = "<group>";
@@ -251,8 +260,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				90017CEF1816B92E007CFCF6 /* IAAppDelegate.m in Sources */,
+				90017D151816BA0D007CFCF6 /* IAAlbumsViewController.m in Sources */,
+				90017D1D1816BE73007CFCF6 /* IAAssetsLibrary.m in Sources */,
 				90017CEB1816B92E007CFCF6 /* main.m in Sources */,
-				90017CF51816B92E007CFCF6 /* IAViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
